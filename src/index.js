@@ -4,10 +4,11 @@ import { Provider } from 'react-redux';
 import { createStore, combineReducers } from 'redux';
 import * as serviceWorker from './serviceWorker';
 
+import './index.css';
+
+import App from './App';
 import counterReducer from './store/reducers/counter';
 import resultReducer from './store/reducers/result';
-import './index.css';
-import App from './App';
 
 const rootReducer = combineReducers({
 	ctr: counterReducer,
